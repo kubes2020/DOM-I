@@ -72,6 +72,21 @@ nav4.style.color = 'green';
 nav5.style.color = 'green';
 nav6.style.color = 'green';
 
+const navBar = document.querySelector('nav');
+const newA1 = document.createElement('a');
+newA1.textContent = 'test-beg';
+newA1.href = '#';
+newA1.style.color = 'green';
+navBar.prepend(newA1);
+
+const newA2 = document.createElement('a');
+newA2.textContent = 'test-end';
+newA2.href = '#';
+newA2.style.color = 'green';
+navBar.appendChild(newA2);
+
+
+
 
 const domAwesome = document.querySelector('.cta-text h1');
 domAwesome.innerHTML = 'DOM <br> IS <br> AWESOME';
